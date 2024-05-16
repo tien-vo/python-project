@@ -7,7 +7,6 @@ POETRY_LOCK := poetry.lock
 .PHONY: help
 help:
 	@echo "TODO: Edit help string"
-	@echo $(POETRY)
 
 .PHONY: install
 install: pyproject.toml ${POETRY_LOCK} ${CONDA_LOCK}
