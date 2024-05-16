@@ -11,7 +11,7 @@ help:
 
 .PHONY: install
 install: pyproject.toml ${POETRY_LOCK} ${CONDA_LOCK}
-	@if [ -z $(shell command -v micromamba 2> /dev/null) ]; then \
+	@if [ -z ${MICROMAMBA} ]; then \
 		echo "Micromamba binary not found!"; \
 		echo "See the README or https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html for installation instruction."; \
 		exit 1; \
