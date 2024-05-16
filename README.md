@@ -1,5 +1,7 @@
 # python-project
-Template for python projects
+Template for python projects. To use this template, create a repository with
+this template, change relevant names for the project and development package,
+and follow installation instructions.
 
 ## Installation
 
