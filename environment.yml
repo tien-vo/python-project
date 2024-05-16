@@ -1,0 +1,11 @@
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.12
+  - poetry
+  - conda-lock
+platforms:
+  - linux-64
+  - osx-64
+  - win-64
