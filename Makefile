@@ -25,6 +25,11 @@ install: pyproject.toml ${POETRY_LOCK} ${CONDA_LOCK}
 	@${MICROMAMBA} run -n ${NAME} poetry install
 	@echo "Done installation!"
 
+.PHONY: 
+format:
+	${MICROMAMBA} run -n ${NAME} poetry run isort src/
+	${MICROMAMBA} run -n ${NAME} poetry run black src/
+
 .PHONY: clean
 clean:
 	find . -type d -name "__pycache__" | xargs rm -rf {};
